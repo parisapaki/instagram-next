@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="flex md:justify-around justify-between p-3 border sticky shadow-sm">
+    <div className="flex md:justify-around justify-between p-3 border-b sticky shadow-sm">
       <Link href="/" className="grid content-center">
         <span>
           <Image
