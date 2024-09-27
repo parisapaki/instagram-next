@@ -1,4 +1,5 @@
 import Header from "./Components/Header";
+import SessionWrapper from "./Components/SessionWrapper";
 import "./globals.css";
 export const metadata = {
   title: "Instagram Clone",
@@ -7,11 +8,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
-    </html>
+    <SessionWrapper>
+      <html lang="en">
+        <body>
+          <Header />
+          {children}
+        </body>
+      </html>
+    </SessionWrapper>
   );
 }
